@@ -1,0 +1,211 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.main-background {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/background.png");
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.main-background .navbar {
+  width: 85%;
+  height: 15%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-background .navbar__logo {
+  width: 200px;
+  cursor: pointer;
+}
+.main-background .navbar__btn {
+  color: #fbfcfd;
+  padding: 10px 25px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  transition-timing-function: linear;
+}
+.main-background .navbar__btn:hover {
+  transition: 1s;
+  padding: 20px 30px;
+  transform: rotate(360deg);
+  transform: 2s;
+  border: 2px solid rgb(84, 84, 123);
+}
+.main-background .content {
+  color: #fbfcfd;
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.main-background .content small:hover {
+  padding: 10px;
+  animation-duration: 2s;
+  animation-name: maxx;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+  animation-direction: reverse;
+}
+@keyframes maxx {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 20px;
+    top: -15px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.main-background .content h1 {
+  font-size: 80px;
+  margin: 10px 0 30px;
+  line-height: 80px;
+}
+.main-background .content h1:hover {
+  padding: 10px;
+  animation-duration: 2s;
+  animation-name: res;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: relative;
+  animation-direction: reverse;
+}
+@keyframes res {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 40px;
+    top: 0px;
+    color: red;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.main-background .content__button {
+  color: #fbfcfd;
+  padding: 10px 25px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+.main-background .content__button:hover {
+  margin: 30px 40px;
+  transition: 1s;
+}
+.main-background .sidebar {
+  width: 50px;
+  height: 100vh;
+  background: linear-gradient(#00545d, #000729);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-background .sidebar__menu {
+  display: block;
+  width: 25px;
+  margin: 40px auto 0;
+  cursor: pointer;
+}
+.main-background .sidebar__social {
+  width: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-background .sidebar__social img {
+  width: 25px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+.main-background .sidebar__useful {
+  width: 50px;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+}
+.main-background .sidebar__useful img {
+  width: 25px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+.main-background .bubbles {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+}
+.main-background .bubbles img {
+  width: 50px;
+  animation: bubble 6s linear infinite;
+}
+.main-background .bubbles img:nth-child(1) {
+  animation-delay: 2s;
+}
+.main-background .bubbles img:nth-child(2) {
+  animation-delay: 1s;
+}
+.main-background .bubbles img:nth-child(3) {
+  animation-delay: 3s;
+}
+.main-background .bubbles img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.main-background .bubbles img:nth-child(5) {
+  animation-delay: 3s;
+}
+.main-background .bubbles img:nth-child(6) {
+  animation-delay: 6s;
+}
+.main-background .bubbles img:nth-child(7) {
+  animation-delay: 7s;
+}
+.main-background .bubbles img:nth-child(8) {
+  animation-delay: 7.5s;
+}
+.main-background .bubbles img:nth-child(9) {
+  animation-delay: 8s;
+}
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
